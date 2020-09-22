@@ -9,8 +9,8 @@ body
 header
 {
     background-color: rgba(231, 231, 231, 0.945);
-    margin: 1px;
-    height: 25vh;   
+    height: 15vh;   
+    padding: 10px;
 }
 
 
@@ -36,39 +36,33 @@ h1
 
 .nav
 {
-    justify-content: space-between;      
+    font-size: 18px;
+    float: right;
+    margin: -20px;
+    padding-left: -20%;
+    margin-right: 3%;    
+   
 }
 
 ul
 {
     flex-direction: column;
-    float: right;
+    display: flex;  
+   
 }
 
 
 .nav li
-{
-    display: flex;
-    display: inline-block;
+{ 
+    display: inline-block;  
+    
 }    
 
 .nav li a
 {
     color: #000;
     text-decoration: none;
-    padding: 5px;   
-}
-
-.title3 a
-{
-    text-decoration: none;
-    color: #000;  
-}
-
-.title3 a:hover
-{
-    background-color: #ff5c0f;
-    width: 100%;
+    padding: 10px;     
 }
 
 ul li a:hover
@@ -78,28 +72,21 @@ ul li a:hover
 
 .logo
 {
-    width: 500px;
+    width: 400px;
     float: right;  
-    padding: 40px;
+    padding: 50px;
     display: none;
-    
+    margin-left: -35%;  
+   
 }
 
 .body
 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     font-size: 25px;
-    align-items: flex-start;
-    justify-content: space-between;  
-}
-
-h4
-{
     margin-left: 20px;
-    height: 20px;   
 }
-
 
 
 .title4
@@ -114,53 +101,49 @@ h4
 
 
 h3
-{
-    margin-left: 20px;
-    height: 70px;
-    font-size: 15px;   
+{   
+    font-size: 18px;      
 }   
 
-.title6 a
-{
-    text-decoration: none;
-    color: #000;
-    height: 20px;
-}
-
-.title6 a:hover
-{
-    background-color: #ff5c0f;  
-}
 
 button
 {
     background-color: #20a8b4;     
-    border-radius: 7px;
-    width: 100%;
-    margin-left: 20px;
+    border-radius: 10%;
+    width: 100%;    
+    padding: 8px;
+}
+
+button:hover
+{
+    background-color: #ff5c0f;  
 }
 
 
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     ul {
-        flex-direction: row;
+        flex-direction: row;   
+        display: inline;
     }
-  }
+  }  
 
-    .logo {
+    .logo 
+    {
         display: flex;
     }
 
 
-    .body {
-        align-items: flex-end;
+    .body 
+    {
+        align-items: auto;
     }
 
 
-    button {
+    button 
+    {
         width: auto;
     }
+
 
 
 
